@@ -44,6 +44,8 @@ class SecondViewController: UIViewController {
     }
     
     @IBOutlet weak var height: UITextField!
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var Label2_Controller2: UILabel!
     @IBOutlet weak var Text_field_controller2: UITextField!
     @IBAction func Secondcontroller(_ sender: Any) {
@@ -51,9 +53,15 @@ class SecondViewController: UIViewController {
             var weight = Double(Text_field_controller2.text!)
             if let name1 = height.text {
                  var heightvar  = Double(height.text!)
-                 heightvar! *= heightvar!
-                 heightvar! =  (703 * weight!) / heightvar!
-                 Label2_Controller2.text! = String(heightvar!)
+                 heightvar! = heightvar! * heightvar!
+                 var height =  (703 * weight!) / heightvar!
+                Label2_Controller2.text! = "BMI is: " + String(format: "%.1f", height)
+               /* if let name2 = age.text {
+                    var agevar = Double(age.text!)
+                    heightvar! = heightvar! / heightvar!
+                    var bmr = (weight! * 4.536) + (15.88 * heightvar!) - (5 * agevar!) + 5
+                    label3.text! = "Calorie intake per day should be: " + String(format: "%.0f", bmr)
+                }*/
              }
             
         }
