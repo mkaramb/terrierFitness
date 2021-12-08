@@ -17,6 +17,7 @@
 		2607D80B275DAB980015E22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2607D809275DAB980015E22A /* LaunchScreen.storyboard */; };
 		2607D813275DADD60015E22A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607D812275DADD60015E22A /* HomeViewController.swift */; };
 		2607D815275DADE90015E22A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607D814275DADE90015E22A /* SecondViewController.swift */; };
+		2648EEF7275EA86B00B3D920 /* TuesdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648EEF6275EA86B00B3D920 /* TuesdayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2607D80C275DAB980015E22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2607D812275DADD60015E22A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2607D814275DADE90015E22A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2648EEF6275EA86B00B3D920 /* TuesdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayView.swift; sourceTree = "<group>"; };
 		48E94A985EF73B3AE0C836DA /* Pods_Fitness_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C733AA97523F94301F3B645 /* Pods-Fitness_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_APP.release.xcconfig"; path = "Target Support Files/Pods-Fitness_APP/Pods-Fitness_APP.release.xcconfig"; sourceTree = "<group>"; };
 		D5EE978F6858DF2950146040 /* Pods-Fitness_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_APP.debug.xcconfig"; path = "Target Support Files/Pods-Fitness_APP/Pods-Fitness_APP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				D5EE978F6858DF2950146040 /* Pods-Fitness_APP.debug.xcconfig */,
 				6C733AA97523F94301F3B645 /* Pods-Fitness_APP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				2607D801275DAB940015E22A /* Main.storyboard */,
 				2607D812275DADD60015E22A /* HomeViewController.swift */,
 				2607D814275DADE90015E22A /* SecondViewController.swift */,
+				2648EEF6275EA86B00B3D920 /* TuesdayView.swift */,
 				2607D807275DAB980015E22A /* Assets.xcassets */,
 				2607D809275DAB980015E22A /* LaunchScreen.storyboard */,
 				2607D80C275DAB980015E22A /* Info.plist */,
@@ -220,6 +222,7 @@
 				2607D813275DADD60015E22A /* HomeViewController.swift in Sources */,
 				2607D806275DAB940015E22A /* Fitness_APP.xcdatamodeld in Sources */,
 				2607D800275DAB940015E22A /* ViewController.swift in Sources */,
+				2648EEF7275EA86B00B3D920 /* TuesdayView.swift in Sources */,
 				2607D7FC275DAB940015E22A /* AppDelegate.swift in Sources */,
 				2607D7FE275DAB940015E22A /* SceneDelegate.swift in Sources */,
 			);
