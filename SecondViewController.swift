@@ -42,20 +42,23 @@ class SecondViewController: UIViewController {
     @objc func didTapTopItem() {
         menu.show()
     }
+    
+    @IBOutlet weak var height: UITextField!
     @IBOutlet weak var Label2_Controller2: UILabel!
     @IBOutlet weak var Text_field_controller2: UITextField!
     @IBAction func Secondcontroller(_ sender: Any) {
         if let name = Text_field_controller2.text {
-            Label2_Controller2.text! += Text_field_controller2.text! + "\n"
-            Label2_Controller2.numberOfLines = 0
+            var weight = Double(Text_field_controller2.text!)
+            if let name1 = height.text {
+                 var heightvar  = Double(height.text!)
+                 heightvar! *= heightvar!
+                 heightvar! =  (703 * weight!) / heightvar!
+                 Label2_Controller2.text! = String(heightvar!)
+             }
+            
         }
     }
     @IBAction func DeleteButton(_ sender: Any) {
         Label2_Controller2.text = nil
     }
-    
-    
-    
-    
-    
 }
