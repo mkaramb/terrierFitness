@@ -10,11 +10,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var myInput: UITextField!
     @IBOutlet weak var myList: UITableView!
     
+    let stringArraySaved = UserDefaults.standard.object(forKey: "savedUserInputs") as? [String] ?? [String]()
+    
     var stringArray = [String]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+        if stringArraySaved.count > 0 {
+            stringArray = stringArraySaved
+        }
     }
     
     @IBAction func tapAddButton(_ sender: Any) {
@@ -26,6 +32,12 @@ class ViewController: UIViewController {
             
             myInput.text = nil
         }
+        else {
+            let alert = UIAlertController(title: "Enter an exercise!", message: "Type in your own exercise or tap the kind of exercise you want.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        UserDefaults.standard.set(stringArray, forKey: "savedUserInputs")
     }
     
     @IBAction func tapDeleteButton(_ sender: UIButton) {
@@ -35,6 +47,7 @@ class ViewController: UIViewController {
         myList.beginUpdates()
         myList.deleteRows(at: [IndexPath(row: indexpath.row, section: 0)], with: .fade)
         myList.endUpdates()
+        UserDefaults.standard.set(stringArray, forKey: "savedUserInputs")
     }
     
 }
