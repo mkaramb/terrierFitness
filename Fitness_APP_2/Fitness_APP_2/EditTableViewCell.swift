@@ -2,8 +2,6 @@
 //  EditTableViewCell.swift
 //  Fitness_APP_2
 //
-//  Created by Angelina Marrero on 12/8/21.
-//
 
 import UIKit
 
